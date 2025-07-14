@@ -1,0 +1,14 @@
+    .cta-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .side-logo {
+      max-height: 40px;
+      width: auto;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
