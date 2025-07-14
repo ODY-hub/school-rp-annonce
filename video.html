@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flash Info - School RP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    .logo {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .flash-banner {
+      background-color: #ff4444;
+      color: white;
+      font-size: 2rem;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      animation: flash 1s infinite alternate;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    @keyframes flash {
+      from { background-color: #ff4444; }
+      to { background-color: #ff0000; }
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .info-text {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      margin-bottom: 25px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .cta-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .discord-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #5865F2;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    .discord-button:hover {
+      background-color: #4752c4;
+    }
+
+    .side-logo {
+      max-height: 40px;
+      width: auto;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .side-logo:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Premier logo en haut -->
+  <img src="logo.png" alt="Logo Université Lincoln" class="logo">
+
+  <div class="flash-banner">FLASH INFO</div>
+
+  <div class="content">
+    <div class="info-text">
+      🎓 Lancement imminent de <strong>l’Université Lincoln de Los Santos</strong> !<br>
+      Une expérience <em>School RP</em> jamais vue sur FiveM. Rejoins-nous maintenant !
+    </div>
+
+    <!-- Vidéo YouTube -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/UpGn0emKO70?si=ZviOZcQCOONOf0rP"
+              title="Annonce School RP"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+
+    <!-- Bouton Discord + 2e logo cliquable -->
+    <div class="cta-container">
+      <a href="https://discord.gg/M8AsYxdaRR" class="discord-button" target="_blank" rel="noopener noreferrer">
+        🔗 Rejoindre le Discord
+      </a>
+      <a href="https://www.tiktok.com/@odysse.rp?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+        <img src="logo2.png" alt="Logo Partenaire" class="side-logo">
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
